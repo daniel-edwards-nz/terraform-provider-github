@@ -1,5 +1,4 @@
-Terraform Provider GitHub
-=========================
+# Terraform Provider GitHub
 
 <img src="https://cloud.githubusercontent.com/assets/98681/24211275/c4ebd04e-0ee8-11e7-8606-061d656a42df.png" width="72" height="">
 
@@ -7,10 +6,16 @@ Terraform Provider GitHub
 
 This project is used to manipulate GitHub resources (repositories, teams, files, etc.) using Terraform. Its Terraform Registry page can be found [here](https://registry.terraform.io/providers/integrations/github/).
 
+## Important
+
+This is a personal fork of the [integrations/github](https://github.com/integrations/terraform-provider-github) Terraform provider for GitHub. It is not maintained by GitHub, Inc. or the GitHub SDK team.
+
+While this was originally forked from the original repo at [v6.6.0](https://github.com/integrations/terraform-provider-github/releases/tag/v6.6.0), it will be kept up to date with the latest changes from the original repo on a best-effort basis. The goal of this fork is to add some additional features that are not yet available in the original repo, and to keep it up to date with the latest changes from the original repo.
+
 ## Requirements
 
--	[Terraform](https://www.terraform.io/downloads.html) 0.10.x
--	[Go](https://golang.org/doc/install) 1.19.x (to build the provider plugin)
+- [Terraform](https://www.terraform.io/downloads.html) 0.10.x
+- [Go](https://golang.org/doc/install) 1.22.x (to build the provider plugin)
 
 ## Usage
 
@@ -20,10 +25,6 @@ Detailed documentation for the GitHub provider can be found [here](https://regis
 
 Detailed documentation for contributing to the GitHub provider can be found [here](CONTRIBUTING.md).
 
-## Roadmap
-
-This project uses [Milestones](https://github.com/integrations/terraform-provider-github/milestones) to scope upcoming features and bug fixes. Issues that receive the most recent discussion or the most reactions will be more likely to be included in an upcoming release.
-
 ## Support
 
-This is a community-supported project. GitHub's SDK team triages issues and PRs periodically. Please engage with the community via Issues for support, and PRs are always welcome!
+You are welcome to use this fork, but please be aware that it is not officially supported by GitHub and may not be as stable as the original repo. If you encounter any issues, please open an issue in this repo and I will do my best to address it.

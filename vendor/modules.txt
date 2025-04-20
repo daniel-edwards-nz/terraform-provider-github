@@ -39,14 +39,23 @@ github.com/GaijinEntertainment/go-exhaustruct/v3/analyzer
 github.com/GaijinEntertainment/go-exhaustruct/v3/internal/comment
 github.com/GaijinEntertainment/go-exhaustruct/v3/internal/pattern
 github.com/GaijinEntertainment/go-exhaustruct/v3/internal/structure
+# github.com/Kunde21/markdownfmt/v3 v3.1.0
+## explicit; go 1.18
+github.com/Kunde21/markdownfmt/v3/markdown
+# github.com/Masterminds/goutils v1.1.1
+## explicit
+github.com/Masterminds/goutils
 # github.com/Masterminds/semver/v3 v3.2.1
 ## explicit; go 1.18
 github.com/Masterminds/semver/v3
+# github.com/Masterminds/sprig/v3 v3.2.3
+## explicit; go 1.13
+github.com/Masterminds/sprig/v3
 # github.com/OpenPeeDeeP/depguard/v2 v2.2.0
 ## explicit; go 1.20
 github.com/OpenPeeDeeP/depguard/v2
 github.com/OpenPeeDeeP/depguard/v2/internal/utils
-# github.com/ProtonMail/go-crypto v1.1.0-alpha.2
+# github.com/ProtonMail/go-crypto v1.1.3
 ## explicit; go 1.17
 github.com/ProtonMail/go-crypto/bitcurves
 github.com/ProtonMail/go-crypto/brainpool
@@ -88,6 +97,9 @@ github.com/alingse/asasalint
 # github.com/apparentlymart/go-textseg/v15 v15.0.0
 ## explicit; go 1.16
 github.com/apparentlymart/go-textseg/v15/textseg
+# github.com/armon/go-radix v1.0.0
+## explicit
+github.com/armon/go-radix
 # github.com/ashanbrown/forbidigo v1.6.0
 ## explicit; go 1.13
 github.com/ashanbrown/forbidigo/forbidigo
@@ -97,12 +109,18 @@ github.com/ashanbrown/makezero/makezero
 # github.com/beorn7/perks v1.0.1
 ## explicit; go 1.11
 github.com/beorn7/perks/quantile
+# github.com/bgentry/speakeasy v0.1.0
+## explicit
+github.com/bgentry/speakeasy
 # github.com/bkielbasa/cyclop v1.2.1
 ## explicit; go 1.20
 github.com/bkielbasa/cyclop/pkg/analyzer
 # github.com/blizzy78/varnamelen v0.8.0
 ## explicit; go 1.16
 github.com/blizzy78/varnamelen
+# github.com/bmatcuk/doublestar/v4 v4.8.1
+## explicit; go 1.16
+github.com/bmatcuk/doublestar/v4
 # github.com/bombsimon/wsl/v4 v4.2.1
 ## explicit; go 1.21
 github.com/bombsimon/wsl/v4
@@ -465,7 +483,10 @@ github.com/gostaticanalysis/forcetypeassert
 # github.com/gostaticanalysis/nilerr v0.1.1
 ## explicit; go 1.15
 github.com/gostaticanalysis/nilerr
-# github.com/hashicorp/errwrap v1.0.0
+# github.com/hashicorp/cli v1.1.7
+## explicit; go 1.20
+github.com/hashicorp/cli
+# github.com/hashicorp/errwrap v1.1.0
 ## explicit
 github.com/hashicorp/errwrap
 # github.com/hashicorp/go-checkpoint v0.5.0
@@ -482,7 +503,7 @@ github.com/hashicorp/go-cty/cty/gocty
 github.com/hashicorp/go-cty/cty/json
 github.com/hashicorp/go-cty/cty/msgpack
 github.com/hashicorp/go-cty/cty/set
-# github.com/hashicorp/go-hclog v1.5.0
+# github.com/hashicorp/go-hclog v1.6.3
 ## explicit; go 1.13
 github.com/hashicorp/go-hclog
 # github.com/hashicorp/go-multierror v1.1.1
@@ -495,14 +516,17 @@ github.com/hashicorp/go-plugin/internal/cmdrunner
 github.com/hashicorp/go-plugin/internal/grpcmux
 github.com/hashicorp/go-plugin/internal/plugin
 github.com/hashicorp/go-plugin/runner
+# github.com/hashicorp/go-retryablehttp v0.7.7
+## explicit; go 1.19
+github.com/hashicorp/go-retryablehttp
 # github.com/hashicorp/go-uuid v1.0.3
 ## explicit
 github.com/hashicorp/go-uuid
 # github.com/hashicorp/go-version v1.7.0
 ## explicit
 github.com/hashicorp/go-version
-# github.com/hashicorp/hc-install v0.6.4
-## explicit; go 1.18
+# github.com/hashicorp/hc-install v0.9.1
+## explicit; go 1.22.0
 github.com/hashicorp/hc-install
 github.com/hashicorp/hc-install/checkpoint
 github.com/hashicorp/hc-install/errors
@@ -537,13 +561,24 @@ github.com/hashicorp/hcl/v2/hclsyntax
 # github.com/hashicorp/logutils v1.0.0
 ## explicit
 github.com/hashicorp/logutils
-# github.com/hashicorp/terraform-exec v0.21.0
-## explicit; go 1.18
+# github.com/hashicorp/terraform-exec v0.22.0
+## explicit; go 1.22.0
 github.com/hashicorp/terraform-exec/internal/version
 github.com/hashicorp/terraform-exec/tfexec
-# github.com/hashicorp/terraform-json v0.22.1
+# github.com/hashicorp/terraform-json v0.24.0
 ## explicit; go 1.18
 github.com/hashicorp/terraform-json
+# github.com/hashicorp/terraform-plugin-docs v0.21.0
+## explicit; go 1.22.7
+github.com/hashicorp/terraform-plugin-docs/cmd/tfplugindocs
+github.com/hashicorp/terraform-plugin-docs/cmd/tfplugindocs/build
+github.com/hashicorp/terraform-plugin-docs/internal/check
+github.com/hashicorp/terraform-plugin-docs/internal/cmd
+github.com/hashicorp/terraform-plugin-docs/internal/functionmd
+github.com/hashicorp/terraform-plugin-docs/internal/mdplain
+github.com/hashicorp/terraform-plugin-docs/internal/provider
+github.com/hashicorp/terraform-plugin-docs/internal/schemamd
+github.com/hashicorp/terraform-plugin-docs/internal/tmplfuncs
 # github.com/hashicorp/terraform-plugin-go v0.23.0
 ## explicit; go 1.21
 github.com/hashicorp/terraform-plugin-go/internal/logging
@@ -609,6 +644,12 @@ github.com/hashicorp/yamux
 github.com/hexops/gotextdiff
 github.com/hexops/gotextdiff/myers
 github.com/hexops/gotextdiff/span
+# github.com/huandu/xstrings v1.3.3
+## explicit; go 1.12
+github.com/huandu/xstrings
+# github.com/imdario/mergo v0.3.15
+## explicit; go 1.13
+github.com/imdario/mergo
 # github.com/inconshreveable/mousetrap v1.1.0
 ## explicit; go 1.18
 github.com/inconshreveable/mousetrap
@@ -680,8 +721,8 @@ github.com/maratori/testpackage/pkg/testpackage
 # github.com/matoous/godox v0.0.0-20230222163458-006bad1f9d26
 ## explicit; go 1.13
 github.com/matoous/godox
-# github.com/mattn/go-colorable v0.1.13
-## explicit; go 1.15
+# github.com/mattn/go-colorable v0.1.14
+## explicit; go 1.18
 github.com/mattn/go-colorable
 # github.com/mattn/go-isatty v0.0.20
 ## explicit; go 1.15
@@ -768,6 +809,11 @@ github.com/pmezard/go-difflib/difflib
 # github.com/polyfloyd/go-errorlint v1.5.2
 ## explicit; go 1.20
 github.com/polyfloyd/go-errorlint/errorlint
+# github.com/posener/complete v1.2.3
+## explicit; go 1.13
+github.com/posener/complete
+github.com/posener/complete/cmd
+github.com/posener/complete/cmd/install
 # github.com/prometheus/client_golang v1.12.1
 ## explicit; go 1.13
 github.com/prometheus/client_golang/prometheus
@@ -848,6 +894,9 @@ github.com/securego/gosec/v2/rules
 # github.com/shazow/go-diff v0.0.0-20160112020656-b6b7b6733b8c
 ## explicit
 github.com/shazow/go-diff/difflib
+# github.com/shopspring/decimal v1.3.1
+## explicit; go 1.13
+github.com/shopspring/decimal
 # github.com/shurcooL/githubv4 v0.0.0-20221126192849-0b5c4c7994eb
 ## explicit
 github.com/shurcooL/githubv4
@@ -982,7 +1031,21 @@ github.com/yeya24/promlinter
 # github.com/ykadowak/zerologlint v0.1.5
 ## explicit; go 1.19
 github.com/ykadowak/zerologlint
-# github.com/zclconf/go-cty v1.14.4
+# github.com/yuin/goldmark v1.7.7
+## explicit; go 1.19
+github.com/yuin/goldmark
+github.com/yuin/goldmark/ast
+github.com/yuin/goldmark/extension
+github.com/yuin/goldmark/extension/ast
+github.com/yuin/goldmark/parser
+github.com/yuin/goldmark/renderer
+github.com/yuin/goldmark/renderer/html
+github.com/yuin/goldmark/text
+github.com/yuin/goldmark/util
+# github.com/yuin/goldmark-meta v1.1.0
+## explicit; go 1.17
+github.com/yuin/goldmark-meta
+# github.com/zclconf/go-cty v1.16.2
 ## explicit; go 1.18
 github.com/zclconf/go-cty/cty
 github.com/zclconf/go-cty/cty/convert
@@ -1001,6 +1064,9 @@ go-simpler.org/musttag
 # go-simpler.org/sloglint v0.7.1
 ## explicit; go 1.21
 go-simpler.org/sloglint
+# go.abhg.dev/goldmark/frontmatter v0.2.0
+## explicit; go 1.20
+go.abhg.dev/goldmark/frontmatter
 # go.uber.org/atomic v1.7.0
 ## explicit; go 1.13
 go.uber.org/atomic
@@ -1021,9 +1087,10 @@ go.uber.org/zap/internal/bufferpool
 go.uber.org/zap/internal/color
 go.uber.org/zap/internal/exit
 go.uber.org/zap/zapcore
-# golang.org/x/crypto v0.31.0
+# golang.org/x/crypto v0.32.0
 ## explicit; go 1.20
 golang.org/x/crypto/argon2
+golang.org/x/crypto/bcrypt
 golang.org/x/crypto/blake2b
 golang.org/x/crypto/blowfish
 golang.org/x/crypto/cast5
@@ -1036,6 +1103,7 @@ golang.org/x/crypto/nacl/box
 golang.org/x/crypto/nacl/secretbox
 golang.org/x/crypto/pbkdf2
 golang.org/x/crypto/salsa20/salsa
+golang.org/x/crypto/scrypt
 golang.org/x/crypto/sha3
 golang.org/x/crypto/ssh
 golang.org/x/crypto/ssh/internal/bcrypt_pbkdf
@@ -1047,13 +1115,13 @@ golang.org/x/exp/slices
 # golang.org/x/exp/typeparams v0.0.0-20240314144324-c7f7c6466f7f
 ## explicit; go 1.18
 golang.org/x/exp/typeparams
-# golang.org/x/mod v0.18.0
-## explicit; go 1.18
+# golang.org/x/mod v0.22.0
+## explicit; go 1.22.0
 golang.org/x/mod/internal/lazyregexp
 golang.org/x/mod/modfile
 golang.org/x/mod/module
 golang.org/x/mod/semver
-# golang.org/x/net v0.26.0
+# golang.org/x/net v0.33.0
 ## explicit; go 1.18
 golang.org/x/net/context/ctxhttp
 golang.org/x/net/http/httpguts
@@ -1066,17 +1134,23 @@ golang.org/x/net/trace
 ## explicit; go 1.18
 golang.org/x/oauth2
 golang.org/x/oauth2/internal
-# golang.org/x/sync v0.10.0
+# golang.org/x/sync v0.11.0
 ## explicit; go 1.18
 golang.org/x/sync/errgroup
 golang.org/x/sync/semaphore
-# golang.org/x/sys v0.28.0
+# golang.org/x/sys v0.29.0
 ## explicit; go 1.18
 golang.org/x/sys/cpu
 golang.org/x/sys/unix
 golang.org/x/sys/windows
-# golang.org/x/text v0.21.0
+# golang.org/x/text v0.22.0
 ## explicit; go 1.18
+golang.org/x/text/cases
+golang.org/x/text/internal
+golang.org/x/text/internal/language
+golang.org/x/text/internal/language/compact
+golang.org/x/text/internal/tag
+golang.org/x/text/language
 golang.org/x/text/runes
 golang.org/x/text/secure/bidirule
 golang.org/x/text/transform

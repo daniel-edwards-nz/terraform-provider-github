@@ -49,13 +49,14 @@ func TestProvider(t *testing.T) {
 
 }
 
-// TODO: this is failing
 func TestAccProviderConfigure(t *testing.T) {
 
 	t.Run("can be configured to run anonymously", func(t *testing.T) {
 
 		config := `
-			provider "github" {}
+			provider "github" {
+				alias = "github-anonymous"
+			}
 		`
 
 		resource.Test(t, resource.TestCase{
@@ -75,6 +76,7 @@ func TestAccProviderConfigure(t *testing.T) {
 
 		config := fmt.Sprintf(`
 				provider "github" {
+					alias = "github-insecure"
 					token = "%s"
 					insecure = true
 				}`,
@@ -98,6 +100,7 @@ func TestAccProviderConfigure(t *testing.T) {
 
 		config := fmt.Sprintf(`
 			provider "github" {
+				alias = "github-individual"
 				token = "%s"
 				owner = "%s"
 			}`,
@@ -121,6 +124,7 @@ func TestAccProviderConfigure(t *testing.T) {
 
 		config := fmt.Sprintf(`
 			provider "github" {
+				alias = "github-organization"
 				token = "%s"
 				organization = "%s"
 			}`,
@@ -144,6 +148,7 @@ func TestAccProviderConfigure(t *testing.T) {
 
 		config := fmt.Sprintf(`
 			provider "github" {
+				alias = "github-ghes"
 				token = "%s"
 				base_url = "%s"
 			}`,
@@ -167,6 +172,7 @@ func TestAccProviderConfigure(t *testing.T) {
 
 		config := fmt.Sprintf(`
 			provider "github" {
+				alias = "github-max-retries"
 				token = "%s"
 				owner = "%s"
 				max_retries = 3

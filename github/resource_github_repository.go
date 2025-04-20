@@ -320,6 +320,7 @@ func resourceGithubRepository() *schema.Resource {
 			"vulnerability_alerts": {
 				Type:        schema.TypeBool,
 				Optional:    true,
+				Computed:    true,
 				Description: "Set to 'true' to enable security alerts for vulnerable dependencies. Enabling requires alerts to be enabled on the owner level. (Note for importing: GitHub enables the alerts on public repos but disables them on private repos by default). Note that vulnerability alerts have not been successfully tested on any GitHub Enterprise instance and may be unavailable in those settings.",
 			},
 			"ignore_vulnerability_alerts_during_read": {
@@ -619,6 +620,11 @@ func resourceGithubRepositoryCreate(d *schema.ResourceData, meta interface{}) er
 		}
 	}
 
+	err := updateVulnerabilityAlerts(d, client, ctx, owner, repoName)
+	if err != nil {
+		return err
+	}
+
 	return resourceGithubRepositoryUpdate(d, meta)
 }
 
@@ -817,12 +823,7 @@ func resourceGithubRepositoryUpdate(d *schema.ResourceData, meta interface{}) er
 	}
 
 	if d.HasChange("vulnerability_alerts") {
-		updateVulnerabilityAlerts := client.Repositories.DisableVulnerabilityAlerts
-		if vulnerabilityAlerts, ok := d.GetOk("vulnerability_alerts"); ok && vulnerabilityAlerts.(bool) {
-			updateVulnerabilityAlerts = client.Repositories.EnableVulnerabilityAlerts
-		}
-
-		_, err = updateVulnerabilityAlerts(ctx, owner, repoName)
+		err = updateVulnerabilityAlerts(d, client, ctx, owner, repoName)
 		if err != nil {
 			return err
 		}
@@ -1061,4 +1062,14 @@ func customDiffFunction(_ context.Context, diff *schema.ResourceDiff, v interfac
 		}
 	}
 	return nil
+}
+
+func updateVulnerabilityAlerts(d *schema.ResourceData, client *github.Client, ctx context.Context, owner, repoName string) error {
+	updateVulnerabilityAlerts := client.Repositories.DisableVulnerabilityAlerts
+	if vulnerabilityAlerts, ok := d.GetOk("vulnerability_alerts"); ok && vulnerabilityAlerts.(bool) {
+		updateVulnerabilityAlerts = client.Repositories.EnableVulnerabilityAlerts
+	}
+
+	_, err := updateVulnerabilityAlerts(ctx, owner, repoName)
+	return err
 }

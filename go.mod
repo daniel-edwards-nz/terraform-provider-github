@@ -1,8 +1,6 @@
 module github.com/integrations/terraform-provider-github/v6
 
-go 1.22.7
-
-toolchain go1.22.12
+go 1.24.2
 
 require (
 	github.com/client9/misspell v0.3.4
